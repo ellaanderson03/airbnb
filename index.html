@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+  </head>
+  <body class="main-container">
+
+    <div class="searchbar2-container">
+      <i class="fas fa-search"></i>
+      <input type="text" name="location" id="location" placeholder="Where are you going?">    
+    </div>
+
+    <header>
+      <a href="#"class="logo-container">
+        <i class="fab fa-airbnb"></i>
+        <h2>airbnb</h2>
+      </a>
+
+      <div class="top-container">
+
+        <div class="host-container">
+          <a href="#">Become A Host</a>
+          <a href="#"><i class="fas fa-globe"></i></a>
+        </div>
+
+        <div class="hamburger-container">
+          <a href=""><i class="fas fa-bars"></i></a>
+          <a href=""><i class="fas fa-user-circle"></i></a>
+        </div>
+        
+      </div>
+    </header>
+
+    <div class="big-container">
+
+      <div class="location-container">
+        <ul class="links-container">
+          <li><a href="stay">Places to Stay</a></li>
+          <li><a href="stay">Experiences</a></li>
+          <li><a href="#online">Online Experiences</a></li>
+        </ul>
+      </div>   
+
+      <div class="searchbar-container">
+        <ul>
+          <li class="info">
+            <label for="location">Location</label>
+            <input type="text" name="location" id="location" placeholder="Where are you going?">    
+          </li>
+            
+          <li class="info">
+            <label for="checkin">Check in</label>
+            <input type="date" id="start" name="trip-start" value="2020-11-23" min="2020-11-23" max="2023-01-01"> 
+          </li> 
+          
+          <li class="info">
+            <label for="checkout">Check out</label>
+            <input type="date" id="end" name="trip-end" value="2020-11-23" min="2020-11-23" max="2023-01-01">
+          </li> 
+
+          <li class="info">
+            <label for="guests">Guests</label>
+            <input type="number" min="1" max="16"> 
+          </li>
+          
+          <li>
+            <div class="search">
+              <a href=""><i class="fas fa-search"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-text">
+
+      <h1>Go<br>Near</h1>
+      
+      <a href="" class="stays-button">Explore nearby stays</a>
+      
+    </div>
+
+    <footer>
+      <ul>
+      <li> <a href="">
+        <i class="fas fa-search"></i> 
+        <p>Explore</p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+        <i class="far fa-heart"></i>
+        <p>Saved</p>
+        </a>
+      </li>
+      <li> <a href="">
+        <i class="fas fa-user-circle"></i>
+        <p>Login</p>
+        </a>
+      </li>
+     </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

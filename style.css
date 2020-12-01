@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background: url("/images/house-image.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+text-decoration: none;
+margin:0;
+padding:0;
+}
+
+li i {
+  list-style: none;
+  margin:0;}
+
+.searchbar2-container {
+  display: none;
+  width:90vw;
+  margin:0 auto;
+  align-items:center; 
+  background-color:white;
+  border-radius:4rem;
+  height:5vh;
+  padding-left:1rem;
+}
+
+.searchbar2-container i {
+margin-right:1rem;
+}
+
+.searchbar2-container input {
+  border:none;
+}
+
+header {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content:space-between;
+  align-items:center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.logo-container {
+
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo-container h2, .logo-container i {
+  margin-right:.3rem;
+  color:whitesmoke;
+  font-size:max(2rem);
+}
+
+.top-container {
+ 
+  display:flex;
+  justify-content:space-between;
+}
+.host-container a:hover{
+  background-color: rgb(230, 255, 255,.5);
+  border-radius:80px;
+
+}
+.host-container {
+  display: flex;
+  /* flex-direction:column; */
+  justify-content:space-between;
+  align-items:center;
+  padding:0rem;
+  font-size:1rem;
+  margin:2rem;
+}
+.host-container i{
+  padding:0;
+}
+
+.host-container a {
+  color:whitesmoke;
+  /* font-size:max(1rem,2vw); */
+  padding:1rem;
+}
+
+.hamburger-container {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:rgb(230, 255, 255,.5);
+  padding:.5rem;
+  margin:auto;
+  border-radius:80px;
+  
+}
+
+.hamburger-container i {
+  margin:.5rem;
+  font-size:1rem;
+  color:white;
+}
+
+ul {
+  list-style:none;
+}
+
+.links-container a {
+  font-size:1rem;
+  color:whitesmoke;
+}
+
+.big-container {
+  margin-top:-115px;
+  padding:1rem;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  font-size:max(1rem,3vw);
+  padding:2rem;
+}
+
+.links-container a:hover {
+  color:rgb(45, 185, 185);
+}
+
+.searchbar-container p {
+  font-size:.5rem;
+}
+
+.searchbar-container label {
+  font-size:.9rem;
+}
+
+.searchbar-container{
+  width:70%;
+  margin:auto;
+}
+
+.searchbar-container ul {
+  display:flex;
+  background-color:rgb(230, 255, 255,.5);
+  justify-content:space-evenly;
+  align-items: center;
+  padding:2rem;
+  border-radius:4rem;}
+
+.search a {
+  display:flex;
+  align-items:center;
+  border-radius:90px;
+  padding:1rem;
+  background-color: rgb(45, 185, 185);
+  color:white;
+}
+
+.search i {
+  font-size:1.5rem;
+}
+
+.location-container{
+  margin:0 auto;
+}
+
+.location-container ul{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  font-size:.5rem;
+  width:40%;
+  margin:0 auto;
+}
+
+.info{
+  display:flex;
+  flex-direction:column;
+}
+
+h1 {
+  font-size:6rem;
+  margin-bottom:1rem;
+}
+
+.main-text{
+  color:whitesmoke;
+  align-items:center;
+  width: 90vw;
+  margin: 9rem auto 0 auto;
+}
+
+.main-text a {
+  color:whitesmoke;
+}
+
+.stays-button {
+  background-color:rgb(230, 255, 255,.5);
+  border-radius:10px;
+  padding:.7rem;
+  font-size:1rem;
+}
+
+footer {
+  display: none;
+}
+
+@media screen and (max-width: 1125px) {
+ footer{
+   display:none;
+ }
+  h2 {
+    display:none;
+  }
+  .location-container a {
+    font-size:.8rem;
+  }
+}
+  
+@media screen and (max-width: 950px){
+  .searchbar-container{
+    width:95%;
+  }
+
+  .main-text{
+    margin-top: 0;
+  }
+
+  .location-container a{
+    font-size:1rem;
+  }
+
+  footer{
+    display:none;
+  }
+  .big-container{
+    margin-top:-20px;
+  }
+
+  .location-container ul {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .main-text{
+    margin-top: -20px;
+  }
+  footer { 
+    display:block;
+  }
+
+  .searchbar2-container {
+    display:flex;
+    margin:1.5rem;
+    padding:1.5rem;
+  }
+
+  .searchbar-container {
+    display:none;
+  }
+
+  .big-container {
+    display: none;
+  }
+
+  header {
+    display: none;
+  }
+
+  .location-container {
+    display:none;
+  }
+
+  .top-container{
+    display:none;
+  }
+
+  .logo-container{
+    display:none;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  footer a{
+    color: rgb(45, 185, 185);
+  }
+
+  footer i{
+    font-size:2rem;
+    padding:.2rem;
+    margin:0;
+  }
+
+  footer p{
+    padding:0;
+    margin:0;
+  }
+
+  footer ul{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: rgb(230, 255, 255,.9);
+    color:rgb(45, 185, 185);
+    padding:1rem;
+    margin: 0;
+  }
+}
